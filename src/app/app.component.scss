@@ -1,228 +1,207 @@
- /* General Styles */
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9; /* Light gray background */
-            color: #333;
-            overflow-x: hidden;
-
-        }
-        .contact-info
-
-        header nav ul li a{
-                color: rgb(120, 98, 140);
-        }
-        a {
-            color: #2c3e50; /* Dark blue color for links */
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #1a242f; /* Darker blue on hover */
-        }
-        /* Header Styles */
-        header {
-            // background: #283747; /* Dark blue background */
-            // width: 100%;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        header p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            font-weight: 400;
-        }
-        header nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        header nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        header nav ul li a {
-            font-size: 18px;
-            transition: color 0.3s ease;
-            font-weight: 500;
-            color: #0a0768;
-
-
-        }
-        header nav ul li a:hover {
-            color: #ffd700; /* Gold color on hover */
-        }
-        /* Main Content Styles */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-
-        }
-        .section {
-            margin-bottom: 60px;
-            text-align: center;
-        }
-        .section h2 {
-            color: #283747; /* Dark blue color for headings */
-            font-size: 32px;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-        .service-card {
-            background-color: #fff;
-            padding: 40px;
-            margin-bottom: 40px;
-            border-radius: 10px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        .service-card i {
-            color: #3498db; /* Blue icon color */
-            font-size: 48px;
-            margin-bottom: 20px;
-            display: block;
-            transition: all 0.3s ease;
-        }
-        .service-card:hover i {
-            transform: rotate(360deg);
-        }
-        .service-card h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #283747; /* Dark blue color for headings */
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-        .service-card p {
-            font-size: 18px;
-            color: #333;
-            transition: all 0.3s ease;
-        }
-        .contact-info  {
-            font-size: 18px;
-            color: #0a0768;
-            margin-bottom: 10px;
-        }
-
-        .contact-info a{
-            color: #0a0768;
-
-        }
-        .contact-info p a:hover{
-            color: #563bb8;
-
-        }
-
-        .social-icons {
-            margin-top: 20px;
-        }
-        .social-icons a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 24px;
-            transition: all 0.3s ease;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            display: inline-block;
-            background-color: #3498db; /* Blue color for social icons */
-            text-align: center;
-        }
-        .social-icons a:hover {
-            background-color: #1e6091; /* Darker blue on hover */
-        }
-        /* Animation Styles */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .animated {
-            animation-duration: 1s;
-            animation-fill-mode: both;
-            animation-timing-function: ease-out;
-        }
-        .fadeInUp {
-            animation-name: fadeInUp;
-        }
-        /* Interactive Styles */
-        .cta-btn {
-            display: inline-block;
-            background-color: #ffd700; /* Gold color for buttons */
-            color: #283747; /* Dark blue text color */
-            font-size: 20px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            font-weight: bold;
-        }
-        .cta-btn:hover {
-            background-color: #f3c912; /* Lighter gold on hover */
-        }
-        /* Responsive Design */
-        @media only screen and (max-width: 768px) {
-            header h1 {
-                font-size: 30px;
-            }
-            header p {
-                font-size: 16px;
-            }
-            header nav ul li a {
-                font-size: 16px;
-            }
-            .section h2 {
-                font-size: 24px;
-            }
-            .service-card {
-                padding: 30px;
-            }
-            .service-card i {
-                font-size: 36px;
-            }
-            .service-card h3 {
-                font-size: 20px;
-                margin-bottom: 15px;
-            }
-            .service-card p {
-                font-size: 16px;
-            }
-            .contact-info p {
-                font-size: 16px;
-            }
-            .social-icons a {
-                font-size: 20px;
-                width: 35px;
-                height: 35px;
-                line-height: 35px;
-            }
-        }
+ body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333;
+    overflow-x: hidden;
+}
+a {
+    color: #2c3e50; /* Dark blue color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #1a242f; /* Darker blue on hover */
+}
+/* Header Styles */
+header {
+    background: #283747; /* Dark blue background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+header nav ul li a {
+    font-size: 18px;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    color: #1e6091;
+}
+header nav ul li a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+/* Main Content Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.section {
+    margin-bottom: 60px;
+    text-align: center;
+}
+.section h2 {
+    color: #283747; /* Dark blue color for headings */
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.service-card {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.service-card i {
+    color: #3498db; /* Blue icon color */
+    font-size: 48px;
+    margin-bottom: 20px;
+    display: block;
+    transition: all 0.3s ease;
+}
+.service-card:hover i {
+    transform: rotate(360deg);
+}
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #283747; /* Dark blue color for headings */
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.service-card p {
+    font-size: 18px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+.contact-info p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    background-color: #3498db; /* Blue color for social icons */
+    text-align: center;
+}
+.social-icons a:hover {
+    background-color: #1e6091; /* Darker blue on hover */
+}
+/* Animation Styles */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+/* Interactive Styles */
+.cta-btn {
+    display: inline-block;
+    background-color: #ffd700; /* Gold color for buttons */
+    color: #283747; /* Dark blue text color */
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+.cta-btn:hover {
+    background-color: #f3c912; /* Lighter gold on hover */
+}
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    header nav ul li a {
+        font-size: 16px;
+    }
+    .section h2 {
+        font-size: 24px;
+    }
+    .service-card {
+        padding: 30px;
+    }
+    .service-card i {
+        font-size: 36px;
+    }
+    .service-card h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .service-card p {
+        font-size: 16px;
+    }
+    .contact-info p {
+        font-size: 16px;
+    }
+    .social-icons a {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
